@@ -20,7 +20,9 @@ class Apprenants extends Migration
         $table->text('date_naiss');
         $table->text('ville_origine');
         $table->text('formation');
+        $table->timestamps();
         $table->integer('contact')->unsigned();
+        $table->text('photo');
     });
 
 

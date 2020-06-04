@@ -12,5 +12,9 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
+    return view('accueil');
+})->name('accueil');
+Route::get('/formation/encours','ApprenantsController@list')->name('formation');
+Route::get('/apprenant/new','ApprenantsController@new')->name('nouveau');
+Route::post('/apprenant/new','ApprenantsController@store')->name('apprenant.store');
+Route::get('/apprenant/details/{id_apprenant}','ApprenantsController@details')->name('details');
