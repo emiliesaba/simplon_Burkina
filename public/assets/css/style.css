@@ -2268,3 +2268,54 @@ section {
   text-transform: uppercase;
   font-weight: bolder;
 }
+
+.titrea{
+  text-align: center;
+  font-weight: bolder;
+  font-size: 80px;
+}
+
+.titrea1{
+  font-size: 40px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.buttona{
+  border-bottom-color: rgb(151, 24, 24);
+  border-radius:15px;
+  background-color: rgb(151, 24, 24);
+  font-weight: bolder;
+  text-align: center;
+  font-size: 20px;
+  padding: 30px;
+  color: white;
+}
+
+.buttona:hover{
+  color:rgb(151, 24, 24);
+  background-color: white;
+  border: 1px solid rgb(151, 24, 24);
+}
+
+.cola{
+  background-color:rgb(151, 24, 24);
+  
+}
+
+.carte{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cola1{
+  color: white;
+}
+
+.cola2{
+  background-color:rgb(214, 151, 162);
+  color: white;
+
+}

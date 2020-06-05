@@ -19,6 +19,7 @@ class Alumini extends Migration
             $table->foreign ('id_apprenant','apprenant')->references('id_apprenant')->on('apprenants')->onDelete('cascade');
             $table->text('promotion');
             $table->text('fonction');
+            $table->timestamps();
             $table->text('entreprise_actuel');
             $table->integer('contact')->unsigned();
         });

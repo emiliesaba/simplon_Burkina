@@ -7,7 +7,20 @@ use App\Apprenants;
 
 class ApprenantsController extends Controller
 {
+    
 
+
+
+    private $apprenants;
+
+
+    function __construct(Apprenants $apprenants){
+    $this->apprenants=$apprenants;
+
+
+
+
+    }
     
     public function list( Apprenants $apprenants ){ 
 $apprenants=Apprenants::get();
@@ -51,10 +64,12 @@ $apprenants=Apprenants::get();
   
           return redirect()->route('formation');
     }
-    public function details(Apprenants $apprenant){
+    public function details(string $nom,string $prenom, int $id){
 
      
-     $details=Apprenants::find($apprenant,null)->get();
-       return view('apprenant.details',compact('details'));
+     $apprenant=$this->apprenants->where('id',$id)->get();
+   
+    
+       return view('apprenant.details',compact('apprenant'));
     }
 }
