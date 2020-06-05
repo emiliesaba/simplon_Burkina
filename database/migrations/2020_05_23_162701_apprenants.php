@@ -14,7 +14,7 @@ class Apprenants extends Migration
     public function up()
     {
     Schema:: create('apprenants', function(Blueprint $table){
-        $table->increments('id_apprenant');
+        $table->increments('id');
         $table->text('nom');
         $table->text('prenom');
         $table->text('date_naiss');

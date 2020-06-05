@@ -13,10 +13,10 @@ class Alumini extends Migration
      */
     public function up()
     {
-        Schema:: create('aluminis', function(Blueprint $table){
+        Schema:: create('alumnis', function(Blueprint $table){
             $table->increments('id_alumini');
             $table->integer('id_apprenant')->unsigned();
-            $table->foreign ('id_apprenant','apprenant')->references('id_apprenant')->on('apprenants')->onDelete('cascade');
+            $table->foreign ('id_apprenant','apprenant')->references('id')->on('apprenants')->onDelete('cascade');
             $table->text('promotion');
             $table->text('fonction');
             $table->timestamps();

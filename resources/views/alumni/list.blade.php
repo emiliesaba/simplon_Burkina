@@ -16,7 +16,7 @@
         <h6><p class="card-text"><strong>Fonction       :</strong>{{$alumni->fonction}}</p></h6>
         <h6><p class="card-text"><strong>Entreprise actuelle       :</strong>{{$alumni->entreprise_actuel}}</p></h6>
         <h6><p class="card-text"><strong>Contact         : </strong>{{$alumni->contact}}</p></h6>
-        <a class="btn btn-danger " href="{{route('alumni.details',['id'=>$alumni->id_alumni,'nom'=>$alumni['apprenant'][0]['nom'],'prenom'=>$alumni['apprenant'][0]['prenom'],'promotion'=>$promotion])}}">Details</a>
+        <a class="btn btn-danger " href="{{route('alumni.details',['id'=>$alumni->id_lumni,'nom'=>$alumni['apprenant'][0]['nom'],'prenom'=>$alumni['apprenant'][0]['prenom'],'promotion'=>$promotion])}}">Details</a>
      </div>
      </div>
     
